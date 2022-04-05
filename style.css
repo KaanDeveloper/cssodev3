@@ -1,0 +1,156 @@
+/*Genel Stil*/
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: arial,sans-serif;
+}
+/*Header Stil*/
+header {
+    top: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header ul {
+    display: flex;
+    list-style-type: none;
+    margin-top: 5px;
+}
+
+header ul.header-links-1 {
+    margin-left: 15px;
+}
+
+header ul.header-links-2 {
+    margin-right: 15px;
+}
+
+header ul li {
+    display: inline-block;
+    margin: 5px 15px;
+    padding-top: 5px;
+}
+
+header ul li a {
+    font-size: 15px;
+    color: black;
+}
+
+header ul li#button {
+    top: -5px;
+}
+
+header ul li a:not(:nth-child(3)):hover {
+    text-decoration: underline;
+}
+
+header ul.header-links-1 li a {
+    opacity: 0.75;
+}
+
+header ul.header-links-2 li button {
+    background-color: #4285f4;
+    color: white;
+    border: none;
+    border-radius: 2px;
+    padding: 4px 12px;
+    font-weight: bold;
+}
+/*Main Stil*/
+div.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 110px;
+}
+
+div.main div.search {
+    width: 534px;
+}
+
+div.main div.search input {
+    width: 100%;
+    margin-top: 15px;
+    height: 30px;
+    position: relative;
+    border: 1px solid rgba(128, 128, 128, 0.5);
+    border-radius: 20px;
+    padding: 5px 45px;
+    left: -25px;
+    font-size: 16px;
+}
+
+div.main div.search svg {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    opacity: 0.5;
+    top: 275px;
+    right: 1020px;
+}
+
+div.main div.search img {
+    position: absolute;
+    top: 275px;
+    left: 1060px;
+    cursor: pointer;
+}
+
+div.main div.search div.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+div.main div.search div.buttons button {
+    margin: 0 5px;
+    text-align: center;
+    padding: 5px 16px;
+    border: none;
+    border-radius: 4px;
+    height: 40px;
+    font-size: 16px;
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+div.main div.search div.buttons button:hover {
+    border: 1px solid rgba(128, 128, 128, 0.5);
+}
+/*Footer Stil*/
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 52.2px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f2f2f2;
+}
+
+footer ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer ul li {
+    list-style: none;
+    padding-left: 18px;
+    padding-right: 18px;
+}
+
+footer ul li a {
+    color: #5f6368;
+    font-size: 14px;
+}
+
+footer ul li a:hover {
+    text-decoration: underline;
+}
